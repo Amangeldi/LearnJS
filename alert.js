@@ -1,1 +1,4 @@
-alert( 'Я – JavaScript!' );
+var admin, name;
+name = "Аман";
+admin = name;
+alert(name);
