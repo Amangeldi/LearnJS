@@ -1,15 +1,3 @@
-function isInteger(num)
-{
-	if((num^0)==num)
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
+var years = prompt('Сколько вам лет?', 100);
 
-alert( isInteger(1) ); // true
-alert( isInteger(1.5) ); // false
-alert( isInteger(-0.5) ); // false
+alert('Вам ' + years + ' лет!')
