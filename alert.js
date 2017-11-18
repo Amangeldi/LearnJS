@@ -1,5 +1,15 @@
-var n = 5;
-
-if (~n) { // сработает, т.к. ~n = -(5+1) = -6
-  alert( "n не -1" ); // выведет!
+function isInteger(num)
+{
+	if((num^0)==num)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
+
+alert( isInteger(1) ); // true
+alert( isInteger(1.5) ); // false
+alert( isInteger(-0.5) ); // false
