@@ -1,12 +1,15 @@
-var c=2, d=5, x=3, y=-1, x1=1;
-function min (a, b)
+function pow(x, y)
 {
-	if(a<b)
+	var i=0;
+	var x1=x;
+	while(i+1<y)
 	{
-		return a;
+		x1=x1*x;
+		i++;
 	}
-	return b;
+	return x1;
 }
-alert(min(c, d));
-alert(min(x, y));
-alert(min(x1, x1));
+var x = prompt("Введите x","1");
+var y = prompt("Введите n","1");
+var result = pow(x, y);
+alert(result);
