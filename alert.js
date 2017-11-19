@@ -1,5 +1,22 @@
-var result=99;
-while(result<=100)
+/*function checkAge(age)
 {
-	result=prompt("Введите число больше 100", 99);
+  if (age > 18)
+  {
+    return true;
+  } else
+  {
+    // ...
+    return confirm('Родители разрешили?');
+  }
+}*/
+
+function checkAge(age)
+{
+  if (age > 18)
+  {
+    return true;
+  }
+  // ...
+  return confirm('Родители разрешили?');
 }
+checkAge(18);
