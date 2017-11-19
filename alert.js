@@ -1,9 +1,6 @@
-var age=91;
-if(!(age<14)&&!(age>90))
+var i = 0;
+while (i < 3)
 {
-	alert(false);
-}
-else
-{
-	alert(true);
+  i++;
+  alert( "номер " + i + "!" );
 }
