@@ -1,6 +1,5 @@
-var i = 0;
-while (i < 3)
+var result=99;
+while(result<=100)
 {
-  i++;
-  alert( "номер " + i + "!" );
+	result=prompt("Введите число больше 100", 99);
 }
