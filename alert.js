@@ -1,22 +1,12 @@
-/*function checkAge(age)
+var c=2, d=5, x=3, y=-1, x1=1;
+function min (a, b)
 {
-  if (age > 18)
-  {
-    return true;
-  } else
-  {
-    // ...
-    return confirm('Родители разрешили?');
-  }
-}*/
-
-function checkAge(age)
-{
-  if (age > 18)
-  {
-    return true;
-  }
-  // ...
-  return confirm('Родители разрешили?');
+	if(a<b)
+	{
+		return a;
+	}
+	return b;
 }
-checkAge(18);
+alert(min(c, d));
+alert(min(x, y));
+alert(min(x1, x1));
