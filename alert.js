@@ -1,5 +1,3 @@
-function extractCurrencyValue(str) {
-	return +str.slice(1);
-}
-
-alert(extractCurrencyValue("$120"));
+var person = {};
+person['qwerty asdfgh zxcvbn'] = 'Джаз';
+alert(person['qwerty asdfgh zxcvbn']);
