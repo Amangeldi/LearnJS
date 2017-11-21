@@ -1,3 +1,7 @@
-var person = {};
-person['qwerty asdfgh zxcvbn'] = 'Джаз';
-alert(person['qwerty asdfgh zxcvbn']);
+var user = new Object();
+user.name = "Вася";
+user.surname = "Петров";
+user.name = "Сергей";
+delete user.name;
+
+alert(user.name + " " + user.surname);
