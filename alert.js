@@ -1,6 +1,12 @@
-function ucFirst(str) {
-	var result;
-	result = str[0].toUpperCase() + str.substring(1);
-	return result;
+function checkSpam(str) {
+	var str1 = "viagra", str2 = "xxx", _str = str.toLowerCase();
+	if(~_str.indexOf(str1) || ~_str.indexOf(str2))
+	{
+		return true;
+	}
+	return false;
 }
-alert(ucFirst("qwerty"));
+
+alert(checkSpam('buy ViAgRA now'));
+alert(checkSpam('free xxxxx'));
+alert(checkSpam("innocent rabbit"));
