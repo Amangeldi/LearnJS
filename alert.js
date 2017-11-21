@@ -1,2 +1,5 @@
-var a = +prompt("a = ", '1'), b = +prompt("b = ", '2');
-alert((+a + +b).toFixed(2) + "$");
+var i = 0;
+while (i < 11) {
+  i += 0.2;
+  if (i > 9.8 && i < 10.2) alert( i );
+}
