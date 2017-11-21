@@ -1,3 +1,1 @@
-alert( 0.1 + 0.2 == 0.3 ); // false
-alert( 0.1 + 0.2 ); // 0.30000000000000004
-alert( 0.1 + 0.2 > 0.3 ); // true
+alert(Math.random());
