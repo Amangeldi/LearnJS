@@ -1,12 +1,5 @@
-function truncate(str, maxLength) {
-	var result, _max = maxLength - 3, DOT = "...";
-	if (str.length>maxLength) {
-		result = str.slice(0, _max);
-		result = result + DOT;
-		return result;
-	}
-	return str;
+function extractCurrencyValue(str) {
+	return +str.slice(1);
 }
 
-alert(truncate("Вот, что мне хотелось бы сказать на эту тему:", 20) );
-alert(truncate("Всем привет!", 20));
+alert(extractCurrencyValue("$120"));
