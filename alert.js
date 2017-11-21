@@ -1,7 +1,6 @@
-var min = 21, max = 30, result = Math.random()*max;
-while(result<21)
-{
-	result = Math.random()*max
+function ucFirst(str) {
+	var result;
+	result = str[0].toUpperCase() + str.substring(1);
+	return result;
 }
-
-alert(result);
+alert(ucFirst("qwerty"));
