@@ -1,3 +1,5 @@
-var goods = ["iphone", "macbook", "x#o", "ea?", "rk"];
-goods.push("компуктер");
-alert(goods[goods.length-1]);
+var styles = ["Джаз", "блюз"]; alert(styles);
+styles.push("Рок-н-Ролл"); alert(styles);
+styles[styles.length-2]="Классика"; alert(styles);
+alert(styles.shift()); alert(styles);
+styles.unshift("Рэп", "Рэгги"); alert(styles);
