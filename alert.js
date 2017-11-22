@@ -1,7 +1,20 @@
-var user = new Object();
-user.name = "Вася";
-user.surname = "Петров";
-user.name = "Сергей";
-delete user.name;
+function isEmpty(obj) {
+	var counter = 0;
+	for (var key in obj)
+	{
+		counter++;
+	}
+	if(counter==0)
+	{
+		return true;
+	}
+	return false;
+}
 
-alert(user.name + " " + user.surname);
+var schedule = {};
+
+alert( isEmpty(schedule) ); // true
+
+schedule["8:30"] = "подъём";
+
+alert( isEmpty(schedule) ); // false
