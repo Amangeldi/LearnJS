@@ -1,4 +1,15 @@
 "use strict";
+function isNumeric(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+function multiplyNumeric(obj) {
+  for (var key in obj) {
+    if (isNumeric(obj[key])) {
+      obj[key] *= 2;
+    }
+  }
+}
 function isEmpty(obj) {
 	var counter = 0;
 	for (var key in obj)
@@ -50,6 +61,17 @@ var salaries = {
   "Даша": 250
 };
 var x = {};
+var menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+
+
+multiplyNumeric(menu);
+
+alert( "menu width=" + menu.width + " height=" + menu.height + " title=" + menu.title );
 alert(sumObj(salaries));
 alert(sumObj(x) );
 alert(maxSalaries(salaries));
