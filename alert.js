@@ -1,18 +1,5 @@
-var time = {
-  year: 2345,
-  month: 11,
-  day: 10,
-  hour: 11,
-  minute: 12,
-  second: 13,
-  microsecond: 123456
-}
+var fruits = ["Яблоко", "Апельсин", "Груша"];
 
-console.log(time); // (*)
-time.microsecond++; // (**)
+alert( fruits.pop() ); // удалили "Груша"
 
-console.log(time);
-time.microsecond++;
-
-console.log(time);
-time.microsecond++;
+alert( fruits ); // Яблоко, Апельсин
