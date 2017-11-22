@@ -1,17 +1,14 @@
-var numbers = [];
+function camelize(str) {
+  var arr = str.split('-');
 
-while (true) {
+  for (var i = 1; i < arr.length; i++) {
+    // преобразовать: первый символ с большой буквы
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+  }
 
-  var value = prompt("Введите число", 0);
-
-  if (value === "" || value === null || isNaN(value)) break;
-
-  numbers.push(+value);
+  return arr.join('');
 }
 
-var sum = 0;
-for (var i = 0; i < numbers.length; i++) {
-  sum += numbers[i];
-}
-
-alert( sum );
+alert( camelize("background-color") ); // backgroundColor
+alert( camelize("list-style-image") ); // listStyleImage
+alert( camelize("-webkit-transition") ); // WebkitTransition
