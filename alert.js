@@ -22,6 +22,19 @@ function sumObj(obj) {
 	return sum;
 }
 
+function maxSalaries(obj) {
+	if(isEmpty(obj)) return "нет сотрудников";
+	var max = 0;
+	var maxName = "";
+	for (var name in salaries) {
+		if (max < salaries[name]) {
+			max = salaries[name];
+			maxName = name;
+		}
+	}
+	return maxName;
+}
+
 var schedule = {};
 
 alert( isEmpty(schedule) ); // true
@@ -39,3 +52,5 @@ var salaries = {
 var x = {};
 alert(sumObj(salaries));
 alert(sumObj(x) );
+alert(maxSalaries(salaries));
+alert(maxSalaries(x));
