@@ -1,10 +1,11 @@
-function getDateAgo(date, days) {
-	var day = new Date(date);
-	day.setDate(date.getDate() - days);
-	return day;
-}
-var date = new Date(2015, 0, 2);
+function getSecondsToday() {
+  var now = new Date();
 
-alert( getDateAgo(date, 1) ); // 1, (1 января 2015)
-alert( getDateAgo(date, 2) ); // 31, (31 декабря 2014)
-alert( getDateAgo(date, 365) ); // 2, (2 января 2014)
+  // создать объект из текущей даты, без часов-минут-секунд
+  var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+  var diff = now - today; // разница в миллисекундах
+  return Math.floor(diff / 1000); // перевести в секунды
+}
+
+alert( getSecondsToday() );
