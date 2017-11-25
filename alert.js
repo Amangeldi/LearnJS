@@ -1,12 +1,16 @@
-function getSecondsToday() {
-	var ONEDAY = 86400;
-	var now = new Date();
+function formatDate(date) {
 
-	// создать объект из текущей даты, без часов-минут-секунд
-	var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  var dd = date.getDate();
+  if (dd < 10) dd = '0' + dd;
 
-	var diff = now - today; // разница в миллисекундах
-	return ONEDAY - Math.floor(diff / 1000); // перевести в секунды
+  var mm = date.getMonth() + 1;
+  if (mm < 10) mm = '0' + mm;
+
+  var yy = date.getFullYear() % 100;
+  if (yy < 10) yy = '0' + yy;
+
+  return dd + '.' + mm + '.' + yy;
 }
 
-alert( getSecondsToday() );
+var d = new Date(2014, 0, 30); // 30 Янв 2014
+alert( formatDate(d) ); // '30.01.14'
