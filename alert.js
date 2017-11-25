@@ -11,3 +11,4 @@ function getWeekDay(date) {
 var date = new Date(2012, 0, 3, 3, 12);
 alert(date);
 alert( getWeekDay(date) );
+alert( date.toLocaleString('ru', {weekday: 'short'}) );
